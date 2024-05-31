@@ -6,6 +6,7 @@ export default defineConfig({
     title: 'xams-framework',
     description: '123',
     srcDir: 'src',
+    outDir: './build',
     head: [
         [
             'link', { rel: 'icon', href: '/logo.png' },
