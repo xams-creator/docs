@@ -109,6 +109,7 @@
             "no-eval": "off"
         }
     },
+    "homepage": "https://xams-creator.github.io/docs",
     "browserslist": {
         "production": [
             ">0.2%",
