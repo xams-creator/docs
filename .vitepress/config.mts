@@ -1,11 +1,9 @@
-import { defineConfig } from 'vitepress';
+import { defineConfig, loadEnv } from 'vitepress';
 import { SearchPlugin } from 'vitepress-plugin-search';
-import { loadEnv } from 'vite';
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, process.cwd());
-    return {
+    return defineConfig({
         base: env.VITE_APP_BASE_URL,
         title: 'xams-framework',
         description: '123',
@@ -52,5 +50,5 @@ export default defineConfig(({ mode }) => {
                 }),
             ],
         },
-    };
+    });
 });
