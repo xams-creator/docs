@@ -15,11 +15,12 @@ export default defineConfig(({ mode }) => {
             ],
         ],
         themeConfig: {
-
+            logo: '/logo.png',
             // https://vitepress.dev/reference/default-theme-config
             nav: [
                 { text: 'Home', link: '/' },
                 { text: 'Examples', link: '/markdown-examples' },
+                { text: '工具', link: '/工具' },
             ],
 
             sidebar: [
@@ -32,10 +33,14 @@ export default defineConfig(({ mode }) => {
                     ],
                 },
             ],
-
             socialLinks: [
                 { icon: 'github', link: 'https://github.com/xams-creator/dusk' },
             ],
+            lastUpdated: true,
+            // lastUpdated: {
+            //     text: '最后更新于',
+            // },
+
         },
         vite: {
             publicDir: '../public',
